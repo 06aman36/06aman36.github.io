@@ -57,7 +57,7 @@ input,button{
 
 a:hover,button:hover,input:hover{
     background: linear-gradient(45deg,coral,darkred);
-    transform: scale(1.5,1.5);
+    transform: scale(1.2,1.5);
 }
 
 .nav-search{

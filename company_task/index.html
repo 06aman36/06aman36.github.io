@@ -12,29 +12,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar bg-danger fixed-top m-auto p-2">
+<nav class="navbar bg-danger fixed-top m-auto p-2 d-inline-block">
     <a href="index.html" class="btn btn-blue">Home</a>
     <a href="login.html" class="btn btn-blue">Login</a>
     <a href="registration.html" class="btn btn-blue">Registration</a>
     <a href="aboutme.html" class="btn btn-blue">About Me</a>
+    <input type="search" placeholder="Search..." class="nav-search">
 </nav>
 
-<div class="div1">
+<div class="div1 animated jello">
 
     <form action="" class="p-4 m-5 text-white">
         <div class="form-group">
         <label>Email :</label>
-        <input type="email" placeholder="Enter Your Email..." required class="form-control">
+        <input type="email" placeholder="Enter Your Email..." required class="form-control" id="email">
         </div>
 
             <div class="form-group">
         <label>Passord :</label>
-        <input type="password" placeholder="Enter Password... " required class="form-control">
+        <input type="password" placeholder="Enter Password... " required class="form-control" id="password">
         </div>
 
         <div class="form-group">
-        <input type="submit" value="Login" class="btn btn-deep-purple"> &nbsp &nbsp &nbsp &nbsp
-        <button class="btn btn-deep-purple"><a href="registration.html">Register</a></button>
+            <button type="submit" class="btn btn-deep-purple" onclick="aman();">Login</button> &nbsp &nbsp &nbsp &nbsp
+            <a href="registration.html"> <button type="submit" class="btn btn-deep-purple">Register</button></a>
         </div>
     </form>
 </div>
@@ -49,6 +50,20 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/mdb.js"></script>
+<script>
+    function aman() {
+        if (input.value === 'user@gmail.com' && password === 123456) {
+            alert('you have successfully Loged-in')
+            window.open(dashboard.html)
+        }
+
+        else{
+            alert('Your Email id and password Did Not Match!!!')
+        }
+    }
+
+
+</script>
 
 </body>
 </html>

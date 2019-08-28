@@ -52,7 +52,7 @@
 <script src="js/mdb.js"></script>
 <script>
     function aman() {
-        if (input.value === 'user@gmail.com' && password === 123456) {
+        if (input[type='email'].value === 'user@gmail.com' && input[type='password'].value === '123456') {
             alert('you have successfully Loged-in')
             window.open(dashboard.html)
         }

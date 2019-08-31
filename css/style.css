@@ -63,3 +63,13 @@ a:hover,button:hover,input:hover{
 .nav-search{
     margin-left: 500px;
 }
+
+.about{
+    background-image: url("../img/background2.jpg");
+    margin-top: 200px;
+    margin-left: 120px;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+}

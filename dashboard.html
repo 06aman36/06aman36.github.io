@@ -7,11 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <! css   files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mdb.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body ng-app>
 <nav class="navbar bg-danger fixed-top m-auto p-2 d-inline-block">
     <a href="index.html" class="btn btn-blue">Home</a>
     <a href="index.html" class="btn btn-blue">Login</a>
@@ -20,57 +24,53 @@
     <input type="search" placeholder="Search..." class="nav-search">
 
 </nav>
-<div class="bg-danger div3 p-4">
-<table>
-    <tr>  <th class="btn btn-deep-purple"> ID </th> <th class="btn btn-deep-purple"> Name </th> <th class="btn btn-deep-purple">Email   </th>  <th class="btn btn-deep-purple"> city  </th> </tr>
-    <tr>  <th >  </th> <th> </th> <th>   </th>  <th>   </th> </tr>
-    <tr>  <th>  </th> <th> </th> <th>   </th>  <th>   </th> </tr>
-    <tr>  <th>  </th> <th> </th> <th>   </th>  <th>   </th> </tr>
-    <tr>  <th>  </th> <th> </th> <th>   </th>  <th>   </th> </tr>
-</table>
+<div class="bg-danger div3 p-4" ng-app>
+<h1 class="text-white">Student Id : {{id}}</h1>
+<h1 class="text-white">Name : {{name}}</h1>
+<h1 class="text-white"></h1>
 </div>
 <br><br>
 
-<div class="bg-danger div4 m-auto p-4">
+<div class="bg-danger div4 m-auto p-4" ng-app>
     <form action="">
         <div class="form-group text-white">
         <lable>  Student Id :   </lable>
-        <input type="text" placeholder="Your Id Number" class="form-control">
+        <input type="text" placeholder="Your Id Number" class="form-control" ng-model="id">
         </div>
 
         <div class="form-group text-white">
         <lable> Student Name :   </lable>
-        <input type="text" placeholder="Your Name....." class="form-control">
+        <input type="text" placeholder="Your Name....." class="form-control ng-model="name">
         </div>
 
         <div class="form-group text-white">
 
         <lable>  Email :   </lable>
-        <input type="email" placeholder="Enter Your Email...." class="form-control">
+        <input type="email" placeholder="Enter Your Email...." class="form-control" ng-model="email">
         </div>
 
 
         <div class="form-group text-white">
         <lable> Class :    </lable>
-        <input type="text" placeholder="Enter Your Class....." class="form-control">
+        <input type="text" placeholder="Enter Your Class....." class="form-control" ng-model="class">
         </div>
 
 
         <div class="form-group text-white">
         <lable>  Enrollment Year :   </lable>
-        <input type="text" placeholder="Enrollment Year...." class="form-control">
+        <input type="text" placeholder="Enrollment Year...." class="form-control" ng-model="enrollment">
         </div>
 
         <div class="form-group text-white">
 
         <lable>  City :   </lable>
-        <input type="text" placeholder="Enter your City Name..." class="form-control">
+        <input type="text" placeholder="Enter your City Name..." class="form-control" ng-model="city">
         </div>
 
 
         <div class="form-group text-white">
         <lable>  Country :   </lable>
-        <input type="text" placeholder="Enter your Country Name...." class="form-control">
+        <input type="text" placeholder="Enter your Country Name...." class="form-control" ng-model="country">
         </div><br>
 
         <div class="form-group text-white">
